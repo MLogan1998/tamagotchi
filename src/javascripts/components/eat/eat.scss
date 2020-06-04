@@ -1,3 +1,14 @@
 #eat {
   background-color: forestgreen;
+  text-align: center;
+
+  h1, H2 {
+    color:white;
+    text-align: center;
+    font-family: monospace;
+  }
+  
+  button:first-of-type {
+    margin-right: 10px;
+  }
 }
