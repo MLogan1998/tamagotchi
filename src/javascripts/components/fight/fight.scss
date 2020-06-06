@@ -1,3 +1,14 @@
 #fight {
   background-color: lightsalmon;
+  text-align: center;
+
+  h1, h2 {
+    color:white;
+    text-align: center;
+    font-family: monospace;
+  }
+  
+  button:first-of-type {
+    margin-right: 10px;
+  }
 }
