@@ -13,8 +13,10 @@ const showBar = () => {
   const sleep = sleepValue.getSleep();
   const fight = fightValue.getStrengh();
   const total = (eat + play + fight + sleep) / 4;
-  const domString = `
-    <h1>Progress: ${total}%</h1>`;
+  const domString = `<div class="progress" style="height: 40px;">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info role="progressbar" style="width:${total}%" aria-valuenow="${total}" aria-valuemin="0" aria-valuemax="100">
+    Overall: ${total}%</div>
+    </div>`;
   utils.printToDom('#progress', domString);
 };
 
