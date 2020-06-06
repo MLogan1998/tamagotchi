@@ -6,7 +6,7 @@ let strength = 100;
 const testFight = () => {
   const domstring = `
     <h1>Fight!</h1>
-    <h2>Fullness Score: ${strength}</h2>
+    <h2>Strength Level: ${strength}</h2>
     <button class="runAway">Run Away</button><button class="violent">Be Violent</button>`;
   utils.printToDom('#fight', domstring);
 };

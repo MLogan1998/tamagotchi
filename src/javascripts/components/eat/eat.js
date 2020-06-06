@@ -6,7 +6,7 @@ let full = 100;
 const testEat = () => {
   const domstring = `
     <h1>Eat!</h1>
-    <h2>Fullness Score: ${full}</h2>
+    <h2>Fullness Level: ${full}</h2>
     <button class="healthy">Healthy Food</button><button class="junk">Junk Food</button>`;
   utils.printToDom('#eat', domstring);
 };

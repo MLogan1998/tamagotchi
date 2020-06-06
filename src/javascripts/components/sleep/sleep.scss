@@ -1,3 +1,14 @@
-body {
-  background-color: darkslategrey;
+#sleep {
+  background-color: darkcyan;
+  text-align: center;
+
+  h1, h2 {
+    color:white;
+    text-align: center;
+    font-family: monospace;
+  }
+  
+  button:first-of-type {
+    margin-right: 10px;
+  }
 }

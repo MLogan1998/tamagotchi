@@ -6,7 +6,7 @@ let fun = 50;
 const testPlay = () => {
   const domstring = `
     <h1>Play!</h1>
-    <h2>Fullness Score: ${fun}</h2>
+    <h2>Happiness Level: ${fun}</h2>
     <button class="super">Super Fun</button><button class="kinda">Kinda Fun</button>`;
   utils.printToDom('#play', domstring);
 };
