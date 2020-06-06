@@ -1,10 +1,12 @@
+@import "~bootstrap/scss/bootstrap";
+
 #progress {
   width: 100%;
   background-color: grey;
+  font-weight: bold;
 }
 
-#progressBar {
-  width: 1%;
-  height: 30px;
-  background-color: green;
+.bg-info {
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
