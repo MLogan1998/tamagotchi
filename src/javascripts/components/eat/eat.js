@@ -24,8 +24,11 @@ const eatJunk = () => {
   if (full < 0) full = 0;
   testEat();
 };
+const getFull = () => full;
 
-$('body').on('click', '.healthy', eatHealthy);
-$('body').on('click', '.junk', eatJunk);
-
-export default { testEat };
+export default {
+  testEat,
+  getFull,
+  eatHealthy,
+  eatJunk,
+};

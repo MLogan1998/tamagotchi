@@ -25,7 +25,11 @@ const deepSleep = () => {
   testSleep();
 };
 
-$('body').on('click', '.nap', catNap);
-$('body').on('click', '.deepSleep', deepSleep);
+const getSleep = () => energy;
 
-export default { testSleep };
+export default {
+  testSleep,
+  getSleep,
+  catNap,
+  deepSleep,
+};

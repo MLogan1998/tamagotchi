@@ -24,7 +24,11 @@ const violence = () => {
   testFight();
 };
 
-$('body').on('click', '.runAway', runRun);
-$('body').on('click', '.violent', violence);
+const getStrengh = () => strength;
 
-export default { testFight };
+export default {
+  testFight,
+  runRun,
+  violence,
+  getStrengh,
+};

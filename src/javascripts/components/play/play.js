@@ -25,7 +25,11 @@ const kindaFun = () => {
   testPlay();
 };
 
-$('body').on('click', '.super', superFun);
-$('body').on('click', '.kinda', kindaFun);
+const getFun = () => fun;
 
-export default { testPlay };
+export default {
+  testPlay,
+  getFun,
+  superFun,
+  kindaFun,
+};
