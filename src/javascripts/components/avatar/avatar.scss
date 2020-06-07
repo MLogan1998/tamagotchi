@@ -1,0 +1,44 @@
+#pet {
+  width: 70%;
+  margin: 10px auto;
+}
+
+.avatar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avy {
+  width: 100px;
+  height: 114px;
+  border: 3px solid grey;
+  border-radius: 5px;
+}
+form {
+  width: 50%;
+}
+
+.form-group {
+  margin-bottom: 0px;
+}
+.form-control{
+  margin-left: 30px;
+}
+
+.avLabel {
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: gray;
+  margin-left: 30px;
+  margin-right: 0px;
+}
+
+.createButton {
+  margin: 8px 0px 0px 30px !important;
+  color: grey;
+  border-color: grey !important;
+  padding: 5px;
+  font-weight: bold;
+}
