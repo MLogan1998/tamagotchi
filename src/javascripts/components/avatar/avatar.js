@@ -15,7 +15,7 @@ const buildImg = (obj) => {
     <form>
     <div class="form-group">
     <label class="avLabel" for="inputAvatar">Create Your Own Avatar</label><br />
-    <input type="text" class="form-control" id="inputAvatar" placeholder="Avatar URL">
+    <input type="text" class="form-control" id="inputAvatar" placeholder="Avatar URL" required>
     <button class="createButton">Create!</button>
     </div>
     </div>
@@ -31,11 +31,11 @@ const buildUserImg = () => {
     <div>
     <img class="avy" src="${img.img}">
     </div>
-    <form>
+    <form id="imgSubmit">
     <div class="form-group">
     <label class="avLabel" for="inputAvatar">Create Your Own Avatar</label><br />
-    <input type="text" class="form-control" id="inputAvatar" placeholder="Avatar URL">
-    <button class="createButton">Create!</button>
+    <input type="text" class="form-control" id="inputAvatar" placeholder="Avatar URL" required>
+    <button type="submit" class="createButton">Create!</button>
     </div>
     </div>
     </form>`;
@@ -52,6 +52,6 @@ const submitUserImg = (e) => {
   userImg = [];
 };
 
-$('body').on('click', '.createButton', submitUserImg);
+$('body').on('submit', 'form', submitUserImg);
 
 export default { buildImg, getLoadImg };
