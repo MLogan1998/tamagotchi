@@ -3,6 +3,7 @@ import fun from '../play/play';
 import sleep from '../sleep/sleep';
 import eat from '../eat/eat';
 import fight from '../fight/fight';
+import deathPenalty from '../kill-gotchi/kill-gotchi';
 
 const runEvent = () => {
   fight.runRun();
@@ -12,6 +13,7 @@ const runEvent = () => {
 const violentEvent = () => {
   fight.violence();
   progress.showBar();
+  deathPenalty.killGotchi();
 };
 
 const superPlayEvent = () => {
@@ -32,6 +34,7 @@ const eatHealthyEvent = () => {
 const eatJunkEvent = () => {
   eat.eatJunk();
   progress.showBar();
+  deathPenalty.killGotchi();
 };
 
 const catNapEvent = () => {
@@ -44,6 +47,10 @@ const deepSleepEvent = () => {
   progress.showBar();
 };
 
+const newGame = () => {
+  deathPenalty.tryAgain();
+};
+
 const attachAllEvents = () => {
   $('body').on('click', '.runAway', runEvent);
   $('body').on('click', '.violent', violentEvent);
@@ -53,6 +60,7 @@ const attachAllEvents = () => {
   $('body').on('click', '.kinda', kindaFunEvent);
   $('body').on('click', '.nap', catNapEvent);
   $('body').on('click', '.deepSleep', deepSleepEvent);
+  $('body').on('click', '.gameOver', newGame);
 };
 
 export default { attachAllEvents };
