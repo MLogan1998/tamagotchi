@@ -15,7 +15,7 @@ const init = () => {
   sleep.testSleep();
   events.attachAllEvents();
   bar.showBar();
-  avatar.buildImg(avatar.getLoadImg());
+  avatar.buildUserImg();
 };
 
 init();
