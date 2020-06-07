@@ -6,6 +6,7 @@ import fight from './components/fight/fight';
 import sleep from './components/sleep/sleep';
 import events from './components/click-events/clicks';
 import bar from './components/progress/progress';
+import avatar from './components/avatar/avatar';
 
 const init = () => {
   eat.testEat();
@@ -14,6 +15,7 @@ const init = () => {
   sleep.testSleep();
   events.attachAllEvents();
   bar.showBar();
+  avatar.buildImg(avatar.getLoadImg());
 };
 
 init();
