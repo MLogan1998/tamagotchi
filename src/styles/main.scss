@@ -30,7 +30,6 @@ button {
   font-weight: 400;
   color: #FFFFFF;
   text-align: center;
-  transition: all 0.15s;
   background-color: transparent;
   outline: none !important;
 }
@@ -38,11 +37,6 @@ button {
 button:hover {
   color: #DDDDDD;
   border-color: #DDDDDD !important;
-}
-
-button:active {
-  color: #BBBBBB;
-  border-color: #BBBBBB !important;
 }
 
 h1 {

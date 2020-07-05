@@ -20,4 +20,4 @@ The objective of the exercise was to create a Tamagotchi site inspired by the po
 ![Kill Screen](screenshots/readme3.jpg)
 
 ## How To Run:
-> Project is deployed at [https://logandevelopment.io/projects/tamagotchi](https://logandevelopment.io/projects/tamagotchi)
+> Project is deployed at [tamagotchi.logandevelopment.io](https://tamagotchi.logandevelopment.io)
